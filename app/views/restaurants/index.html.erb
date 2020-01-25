@@ -1,0 +1,12 @@
+<h1>All our Restaurants</h1>
+
+<% @restaurants.each do |restaurant| %>
+  <h2><%= link_to restaurant.name, restaurant_path(restaurant) %>
+  <p><%= restaurant.address %></p>
+  <p><%= restaurant.phonenumber %></p>
+  <p><%= restaurant.category %></p>
+  <p><%= restaurant.review %></p>
+
+
+
+<% end %>
